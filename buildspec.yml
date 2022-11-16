@@ -42,7 +42,7 @@ phases:
     commands:
       - docker build --tag $REPOSITORY_URI:$TAG .
       - pip3 install -r requirements.txt 
-      - python -m pytest test_main.py
+      - python3 -m pytest test_main.py
 
   post_build:
     commands:
